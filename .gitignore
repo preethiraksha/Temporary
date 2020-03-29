@@ -1,0 +1,8 @@
+node_modules
+core/train_img
+core/pre_img
+core/known
+core/unknown
+core/__pycache__
+data
+core/identification_image.jpg

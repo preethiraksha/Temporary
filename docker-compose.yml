@@ -1,0 +1,17 @@
+version: "3"
+services:
+  app:
+    container_name: facenet-api
+    restart: always
+    build: .
+    ports:
+      - "8080:3000"
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo-facenet
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27018:27017"

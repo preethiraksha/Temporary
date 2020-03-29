@@ -1,0 +1,8 @@
+{
+  "env": {
+    "SERVER_IP": "localhost",
+    "MONGO_ATLAS_PASSWORD": "admin",
+    "JWT_KEY": "secret_facenet_api",
+    "PORT": 3000
+  }
+}
