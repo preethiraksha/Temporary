@@ -8,6 +8,7 @@ const uploadRoute = require("./api/routes/upload-route");
 const trainRoute = require("./api/routes/train-route");
 const identifyRoute = require("./api/routes/identify-route");
 const studentRoute = require("./api/routes/student-route");
+const attendanceRoute = require("./api/routes/attendance-route");
 
 app.use(logger("dev"));
 
@@ -41,6 +42,7 @@ app.use("/api/upload", uploadRoute);
 app.use("/api/train", trainRoute);
 app.use("/api/identify", identifyRoute);
 app.use("/api/student", studentRoute);
+app.use("/api/attendance", attendanceRoute);
 
 app.use((req, res, next) => {
   const error = new Error("Not found");
